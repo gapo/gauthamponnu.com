@@ -1,0 +1,94 @@
+/* ### Featured ### */
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+
+div#featured {
+	height: 233px;	
+}
+
+div.featured-arrow {
+	width: 26px; height: 31px;
+	float: left;
+	margin: 125px 0px 0px 0px;
+
+}
+div#slider {
+	width: 809px; height: 210px;
+	padding: 0px 10px; 
+	margin: 32px 27px;
+	float: left; 
+	position: relative;
+}
+
+div.projectImage {
+	float: left; 
+	overflow: hidden;
+	margin: 0; 
+	padding: 0;
+	border: 5px solid #000;
+}
+
+div.projectDescription {
+	float: left; 
+	margin: 0px 0 0 55px;
+	padding: 0px 0px 0px 0px;
+	width: 370px; 
+}
+
+div.projectDescription p {
+	font-family: 'Arvo', serif;
+	font-size: 14px; 
+	color: #dedbda;
+	line-height: 22px; 
+	margin-top: 6px;
+	text-align: left;
+}
+
+div.projectDescription h3{
+  	color: #dddc67;
+	font-size: 18px;
+  	padding: 0px 0px 0px 0px;
+  	font-weight: normal;
+}
+
+div.projectDescription a{
+  	color: #FF6600;
+  	font-family: 'Arvo', serif;
+	font-size: 16px;	
+	line-height: 42px; 
+  	padding: 0px 0px 0px 10px;
+  	font-weight: bold;
+}
+
+div.projectDescription img{
+	padding:10px 0px 0px 80px;	
+}
+.stripViewer { 
+	position: relative;
+	overflow: hidden; 
+	width: 809px; 
+	float: left;
+	margin: 10px 0px 0px 0px;
+}
+
+.stripViewer .panelContainer { 
+	position: relative;
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+	list-style-type: none;
+	float: left; overflow: hidden;
+}
+
+.stripViewer .panelContainer .panel { /* Each panel is arranged end-to-end */
+	float:left;
+	overflow: hidden;
+	position: relative;
+	width: 809px;
+	padding: 0px;
+}
+
+.stripNavL, .stripNavR { /* The left and right arrows */
+	text-indent: -9000em;
+}
+
+.csw {width: 100%; height: 100%; overflow: hidden; float: left;}
+.csw .loading { margin: 100px 0 300px 0; text-align: center; color: #fff; font-weight: bold; font-family: Verdana; font-size: 12px; }
