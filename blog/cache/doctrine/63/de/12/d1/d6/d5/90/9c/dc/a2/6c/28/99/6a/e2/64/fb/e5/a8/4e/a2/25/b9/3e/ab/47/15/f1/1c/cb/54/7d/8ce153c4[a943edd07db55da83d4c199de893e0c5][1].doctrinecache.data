@@ -1,0 +1,119 @@
+1432452437
+s:5916:"<h1>Mediator Origins</h1>
+<p>The Mediator theme for Grav is a direct port of the <a href="https://github.com/dirkfabisch/mediator">Mediator Theme for Jekyll</a> designed by <a href="http://blog.base68.com/about/">Dirk Fabisch</a> which in turn was inspired by the <a href="http://www.svenread.com/readium-ghost-theme/">Readium 2.0 Theme for Ghost</a>.</p>
+<p>A couple of minor tweaks and adjustments have been made to better take advantage of Grav features and functionality.</p>
+<h1>Features</h1>
+<ul>
+<li>Fully Responsive layout</li>
+<li>Use header images in articles, if you want to (add tag "image" and url to the image in the front matter section of a post)</li>
+<li>Minimal design</li>
+<li>Featured article support</li>
+<li>FontAwesome implemented for easy use of icons fonts</li>
+<li>Free &amp; Open Source Font usage</li>
+</ul>
+<h2>Basic Setup for a new Grav site</h2>
+<p>The simplest way to install Mediator theme for Grav is to download and install the Mediator Skeleton package:</p>
+<ol>
+<li><a href="http://getgrav.org/downloads/skeletons#extras">Download Mediator Skeleton</a></li>
+<li>Simply unzip the package into your web root folder.</li>
+<li>Point your browser at the folder, job done!</li>
+</ol>
+<p><strong>TIP:</strong> Check out the <a href="http://learn.getgrav.org/basics/installation">general Grav installation instructions</a> for more details on this process.</p>
+<hr />
+<h2>Existing Grav site</h2>
+<p>It is possible to install just the theme, but page content will need to reference the Mediator theme's supported templates.  It is strongly advised to at least install the Mediator Skeleton package to see the theme's capabilities in action.</p>
+<p>To install  <strong>just</strong> the theme:</p>
+<pre><code>$ bin/gpm install mediator</code></pre>
+<hr />
+<h2>Advanced GitHub-based installation</h2>
+<ol>
+<li>Download and install <a href="https://github.com/getgrav/grav">Grav</a></li>
+<li>Create a new sandbox site with: <code>bin/grav sandbox ~/public_html/mediator</code></li>
+<li>Clone this repo into the <code>mediator</code> folder as <code>user</code>: <code>git clone: https://github.com/getgrav/grav-skeleton-mediator-site ~/public_html/mediator/user</code></li>
+<li>Install the plugin and theme dependencies: <code>bin/grav install</code></li>
+</ol>
+<h1>Configuration</h1>
+<p>Most of the configuration of the theme is done in the <code>user/config/site.yaml</code> file:</p>
+<pre><code>title: Mediator
+description: A Grav theme - Medium inspired
+taxonomies: [tag, featured]
+metadata:
+    description: Grav is an easy to use, yet powerful, open source flat-file CMS
+
+logo: /user/images/logo.jpg
+
+date_long: 'd F Y'
+date_short: 'd M Y'
+
+author:
+    name: Bill Bloggs
+    email: a-mail@mail.mail
+    image: /user/images/avatar.jpg
+    bio: I'm a blogger and a Grav-lover
+
+social:
+    - icon: twitter
+      url: https://twitter.com/getgrav
+      desc: Follow me on twitter
+      share_url: http://twitter.com/share
+      share_title: ?text=
+      share_link: "&amp;amp;url="
+
+    - icon:  facebook
+      url:   https://facebook.com/???
+      desc: Connect with me facebook
+      share_url: //www.facebook.com/sharer.php
+      share_title: ?t=
+      share_link: "&amp;amp;u="
+
+    - icon: github
+      url: https://github.com/getgrav
+      desc: Fork me on github
+      share_url:
+      share_title:
+      share_link:
+
+    - icon:  google-plus
+      url:   https://google.com/???
+      desc:  Add me on google+
+      share_url:
+      share_title:
+      share_link:</code></pre>
+<p>Main settings for the site</p>
+<ul>
+<li><strong>title</strong>: name of your site</li>
+<li>
+<p><strong>description</strong>: description of your site</p>
+</li>
+<li><strong>logo</strong>: small logo for the site (300x * 300x)</li>
+<li><strong>long date</strong>: date used in the <code>default</code> listing page</li>
+<li>
+<p><strong>short date</strong>: date used in the <code>post</code> details page</p>
+</li>
+<li><strong>author name</strong>: name site owner</li>
+<li><strong>author email</strong>: mail address of the site owner</li>
+<li><strong>author image</strong>: small image of author (300x * 300px)</li>
+<li><strong>author bio</strong>: short one sentence biography</li>
+</ul>
+<h3>Social</h3>
+<p>The template allows to add all major social platforms to your site.
+Fill the the form for each platform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  If you leave the <strong>url</strong> and <strong>desc</strong> empty the icons are not shown on the index page, but the share icons on the article pages remains untouched (Thanks to <a href="https://github.com/philsturgeon">Phil</a>)</p>
+<ul>
+<li><strong>icon</strong>: name of social platform (must match a name of <a href="http://fortawesome.github.io/Font-Awesome/">font-awsome</a> icon set )</li>
+<li><strong>url</strong>:  url of your account</li>
+<li><strong>desc</strong>: slogan of the platform</li>
+<li><strong>share_url</strong>: share url</li>
+<li><strong>share_title</strong>: first part of url for the title</li>
+<li><strong>share_link</strong>: second part of the share url for the link to the post</li>
+</ul>
+<p>The Twig template engine will magical combine the different parts to a share url.</p>
+<pre><code>http://twitter.com/share?text=post_title&amp;amp;url=post_url</code></pre>
+<h1>Supported Page Types</h1>
+<p>The Mediator theme supports 3 page types via templates:</p>
+<ul>
+<li><strong>default</strong>: the template used to display the default blog listing view</li>
+<li><strong>post</strong>: a full page of the blog post</li>
+<li><strong>page</strong>: similar to the post, but without author information or reading-time</li>
+</ul>
+<h1>Licensing</h1>
+<p><a href="https://github.com/dirkfabisch/madiator/blob/master/LICENSE">MIT</a> with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.</p>";

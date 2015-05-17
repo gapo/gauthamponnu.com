@@ -179,11 +179,27 @@ body{
   background: url(../images/portoflio_bg.png);
 }
 
-#updates h2{
+#updates h1{
   	color: #dddc67;
+	font-size: 24px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+  	font-weight: normal;
+}
+
+#updates h2{
+  	color: #dedbda;
 	font-size: 18px;
   	font-weight: normal;
 }
+
+#updates h3{
+  	color: #dddc67;
+	font-size: 18px;
+	padding-bottom: 20px;
+  	font-weight: normal;
+}
+
 
 
 /*Album Art Section*/
