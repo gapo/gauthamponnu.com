@@ -1,0 +1,359 @@
+/*Google Font*/
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic); 
+
+/*Overiding fonts*/
+body, input, textarea {
+  font-family: 'Arvo',serif;
+  line-height: 20px;
+}
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{
+  margin:0;
+  padding:0;
+}
+ul{
+  list-style:none;
+}
+fieldset{
+  border:0;
+}
+
+a, a:hover, a:link, a:active, a.focus, a:visited {
+  text-decoration:none;
+}
+
+a.nodec, a.nodec:link, a.nodec:visited, a.nodec:hover, a.nodec:focus, a.nodec:active{
+  color:#fff;
+  text-decoration:none;
+}
+
+a img{
+  border:0;
+}
+
+.clear{
+  clear:both;
+}
+body{
+  position:relative;
+  background:#161514 url(../images/body_bg.jpg) center top no-repeat;
+  background-attachment: fixed;
+  color:#000;
+  font:62.5%;
+}
+
+#header{
+  width: 932px;
+  height: 103px;
+  padding: 37px 0px 0px 28px;
+  margin: 0px 0px 40px 0px;
+  background: url(../images/header_bg.jpg) bottom no-repeat;
+}
+
+#logo{
+  display: block;
+  width: 960px;
+  height: 38px;
+  float: left;
+  margin: 0px 0px 25px 0px;
+  background: url(../images/gapo.png) no-repeat;
+  text-indent: -99999px;
+}
+
+#navigation{
+  width: 900px;
+  height: 31px;
+  padding: 9px 30px 0px 2px;
+  clear: both;
+}
+
+#navigation ul{
+  float: left;
+}
+
+#navigation ul li{
+  float: left;
+  font-size: 18px;
+  color: #a8a5a4;
+  margin: 0px 24px 0px 0px;
+}
+
+#navigation ul li a{
+  font-size: 18px;
+  color: #a8a5a4;
+}
+
+#social{
+  float: right;
+}
+
+#social ul li{
+  float: left;
+  font-size: 18px;
+  color: #a8a5a4;
+  margin: 0px 5px 0px 0px;
+}
+
+#social ul li a{
+  font-size: 18px;
+  color: #7488ef;
+}
+
+#social img{
+  position: relative;
+  top: -5px;
+}
+
+#teasers{
+  width: 960px;
+/*  height: 195px;*/
+  height: 230px;
+  margin: 0px 0px 35px 0px;
+  border: 1px solid #21211f;
+  padding: 28px 0px 0px 0px;
+  background: url(../images/portoflio_bg.png);
+}
+
+#teasers h2{
+  color: #dddc67;
+  font-size: 18px;
+  margin: 0px 0px 20px 0px;
+  font-weight: normal;
+}
+
+#teasers p{
+  font-size: 14px;
+  color: #dedbda;
+  line-height: 135%;
+}
+
+.teaser_container{
+  width: 271px;
+  height: 195px;
+  float: left;
+  padding: 0px 0px 0px 29px;
+}
+
+#portfolio{
+  width: 958px;
+  /*height: 408px;*/
+  margin: 0px 0px 40px 0px;
+  border: 1px solid #21211f;
+  background: url(../images/portoflio_bg.png);
+}
+
+#portfolio_container{
+  width: 958px;
+  /*height: 380px;*/
+  padding: 28px 0px 0px 0px;
+}
+
+#portfolio_container ul li{
+  display: inline;
+  float: left;
+  width: 280px;
+  height: 160px;
+  margin: 0px 0px 28px 28px;
+  border: 1px solid #21211f;
+}
+
+#portfolio h2{
+  color: #dddc67;
+	font-size: 18px;
+  padding: 0px 0px 0px 28px;
+  font-weight: normal;
+}
+
+#portfolio_container ul li img{
+  float: left;
+}
+
+
+#updates {
+  float: left;
+  width: 932px;
+  clear: both;
+  padding: 28px 0px 36px 28px;
+  margin: 0px 0px 35px 0px;
+  border: 1px solid #21211f;
+  background: url(../images/portoflio_bg.png);
+}
+
+#updates h2{
+  	color: #dddc67;
+	font-size: 18px;
+  	font-weight: normal;
+}
+
+
+/*Album Art Section*/
+
+#lastfmrecords { margin-top:25px; }
+
+#lastfmrecords li {	
+	margin:0px 45px 40px 0;
+	float:left;
+	position:relative;	}
+	
+#lastfmrecords li a img {
+	position:absolute;
+	width:70px;	height:70px; left:2px;top:1px;	}
+	
+#lastfmrecords li a	{
+	display:block;	position:relative;
+	background:url(../images/vinyl.png) 0 0 no-repeat;
+	float:left;		width:96px;	height:76px;
+	z-index:2; }
+
+/*#lastfmrecords li a span {*/
+/*	background:url(../images/vinyl.png) 0 0 no-repeat;*/
+/*	width:96px;*/
+/*	height:76px;	z-index:1; }	*/
+	
+/*Album Art Section Ends*/
+
+.text {
+  width: 587px;
+  float: left;
+  padding: 0px 34px 0px 0px;
+}
+
+.text p{
+  font-size: 14px;
+  color: #dedbda;
+  margin: 0px 0px 24px 0px;
+}
+
+.text img{
+  position: relative;
+  float:right;
+  margin: 0px 0px 0px 0px;
+  top: -15px;
+}
+
+#my_blog,#my_other_blog {
+  float: left;
+  width: 932px;
+  clear: both;
+  padding: 28px 0px 36px 28px;
+  margin: 0px 0px 35px 0px;
+  border: 1px solid #21211f;
+  background: url(../images/portoflio_bg.png);
+}
+
+#my_blog h2,#my_other_blog h2{
+  color: #dddc67;
+  margin: 0px 0px 20px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.my_skills{
+  width: 219px;
+  float: left;
+}
+
+.my_skills h2{
+  font-size: 14px;
+  color: #dddc67;
+  margin: 0px 0px 24px 0px;
+}
+
+.my_skills ul li{
+  width: 219px;
+  float: left;
+  font-size: 14px;
+  margin: 0px 0px 2px 0px;
+  color: #a8a5a4;
+}
+
+.my_skills ul li span{
+  float: left;
+}
+
+.my_skills ul li img{
+  float: right;
+}
+
+#contact_me{
+  width: 928px;
+  height: 33px;
+  clear: both;
+  color: #a8a5a4;
+  padding: 13px 0px 0px 30px;
+  margin: 0px 0px 24px 0px;
+  border: 1px solid #1f1f1d;
+  background: #0f0f0e;
+}
+
+#contact_me p{
+  color: #a8a5a4;
+  font-size: 18px;
+  font-style: italic;
+}
+
+#contact_me p a{
+  color: #dddc67;
+}
+
+#backtotop{
+  color: #dddc67;
+  font-size: 18px;
+  font-style: italic;
+  padding: 0px 0px 0px 29px;
+  text-decoration: underline;
+}
+
+#footer{
+  width: 100%;
+  clear: both;
+  margin: 33px 0px 0px 0px;
+  border-top: 1px solid #1f1f1d;
+  background: #0f0f0e;
+}
+
+#footer_container{
+  width: 940px;
+  margin: 0 auto;
+  padding: 24px 0px 0px 29px;
+}
+
+#footer_container p{
+  color: #dedbda;
+  font-size: 12px;
+}
+
+.replace{
+  position:relative;
+  margin:0;
+  padding:0;
+  /* \*/
+  overflow:hidden;
+  /* */
+}
+.replace span{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+.skiplink{
+  display:none;
+}
+#wrapper{
+  width: 960px;
+  margin:0 auto;
+}
+
+#list ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 2em;
+  text-indent: -1em;
+  color: #dedbda;
+  font-size: 14px;
+}
+#list ul li:before {
+  content: "\00BB \0020";
+  }
